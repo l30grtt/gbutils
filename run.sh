@@ -2,7 +2,7 @@
 
 steps=( "foo" "bar" "baz" )
 
-for step in ${steps}
+for step in ${steps[@]}
 do
     :
     echo $step
