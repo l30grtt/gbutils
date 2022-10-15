@@ -31,7 +31,7 @@ alias prv="v $PROFILE_PATH"
 alias prl="less $PROFILE_PATH"
 alias prg="cat $PROFILE_PATH | grep"
 
-e# ALIASES
+# ALIASES
 alias als="source $ALIAS_PATH"
 alias alv="v $ALIAS_PATH"
 alias all="less $ALIAS_PATH"

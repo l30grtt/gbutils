@@ -2,6 +2,8 @@
 
 source ./config
 
-./lib/scripts/restore-win-path.sh
+cmd "/C $RESTORE_PATH_BAT_SCRIPT_WIN_PATH"
 
 rm -rfv $GBUTILS_WINPATH_SNAPSHOT_DIR
+
+cmd "/C $UNENV_BAT_SCRIPT_WIN_PATH"

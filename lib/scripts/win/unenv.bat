@@ -14,4 +14,4 @@ REG DELETE "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /
 REG DELETE "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /F /V "NVM_SYMLINK"
 REG DELETE "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\Environment" /F /V "JAVA_HOME"
 
-PAUSE
+REM PAUSE

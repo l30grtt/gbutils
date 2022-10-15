@@ -2,8 +2,8 @@
 
 steps=(
     apps
-    folders
     env
+    folders
 )
 
 for step in "${steps[@]}"

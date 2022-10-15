@@ -17,7 +17,7 @@ steps=(
     generate-ssh-key-pair
 
     # nvm install & use node 16.17.1
-    install-node
+    #install-node
 )
 
 for step in ${steps[@]}

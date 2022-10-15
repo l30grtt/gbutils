@@ -13,5 +13,5 @@ steps=(
 
 for step in "${steps[@]}"
 do :
-    "./lib/unzip/unzip-$step-post-install"
+    "./lib/unzip/unzip-$step-post-install.sh"
 done

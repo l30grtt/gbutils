@@ -4,4 +4,4 @@ source ./config
 
 mkdir -p $GBUTILS_WINPATH_SNAPSHOT_DIR
 
-cmd "/C C:\repo\gdu\temp\gbutils\lib\scripts\win\snapshot-path.bat"
+cmd "/C $SNAPSHOT_PATH_BAT_SCRIPT_WIN_PATH"
