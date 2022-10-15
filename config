@@ -1,0 +1,65 @@
+#!/bin/sh
+
+# HOST
+HOST_C="/c"
+
+HOST_POCKET_DIR="$HOST_C/pocket"
+HOST_REPO_DIR="$HOST_C/repo"
+HOST_SERVERS_DIR="$HOST_C/server"
+HOST_TEMP_DIR="$HOST_C/temp"
+
+HOST_USER="$HOST_C/Users/leona"
+
+HOST_USER_ZIPS="$HOST_USER/Workspace/ZIPs"
+
+GIT_ZIP="$HOST_USER_ZIPS/Git/git.zip"
+NVM_ZIP="$HOST_USER_ZIPS/Node/nvm-noinstall.zip"
+NPP_ZIP="$HOST_USER_ZIPS/Notepad++/npp.8.4.5.portable.x64.zip"
+JDK_ZIP_NAME="zulu11.58.23-ca-jdk11.0.16.1-win_x64"
+JDK_ZIP="$HOST_USER_ZIPS/JDK/$JDK_ZIP_NAME.zip"
+ECLIPSE_ZIP="$HOST_USER_ZIPS/Eclipse/eclipse-jee-2022-09-R-win32-x86_64.zip"
+
+GBUTILS_HOME_WIN_PATH="C:\repo\gdu\temp\gbutils"
+
+# ### FILL VALUES ABOVE ###
+
+HPD="$HOST_POCKET_DIR"
+HOST_GIT_DIR="$HPD/git"
+HOST_NVM_DIR="$HPD/nvm"
+HOST_NPP_DIR="$HPD/npp"
+HOST_JDK_DIR="$HPD/$JDK_ZIP_NAME"
+HOST_ECLIPSE_DIR="$HPD/eclipse"
+
+#
+HOST_NVM_SYMLINK="$HOST_C/Program Files/nodejs"
+#
+GBUTILS_WINPATH_SNAPSHOT_DIR="$HOST_USER/.gbutils/snapshots"
+#
+GIT_PROFILE="$HOST_GIT_DIR/etc/profile"
+GBUTILS_PROFILE="$HOST_GIT_DIR/.gbutils_profile"
+GBUTILS_ALIASES="$HOST_GIT_DIR/.gbutils_aliases"
+GIT_USER_CONFIG="$HOST_USER/.gitconfig"
+#
+GBUTILS_LIB_WIN_SCRIPTS="$GBUTILS_HOME_WIN_PATH\lib\scripts\win"
+
+GIT_ENV_BAT_SCRIPT_WIN_PATH="$GBUTILS_LIB_WIN_SCRIPTS\git-env.bat"
+NVM_ENV_BAT_SCRIPT_WIN_PATH="$GBUTILS_LIB_WIN_SCRIPTS\nvm-env.bat"
+JDK_ENV_BAT_SCRIPT_WIN_PATH="$GBUTILS_LIB_WIN_SCRIPTS\jdk-env.bat"
+UNENV_BAT_SCRIPT_WIN_PATH="$GBUTILS_LIB_WIN_SCRIPTS\unenv.bat"
+RESTORE_PATH_BAT_SCRIPT_WIN_PATH="$GBUTILS_LIB_WIN_SCRIPTS\restore-path.bat"
+#
+GIT_TARGET_USR_SRC="$HOST_GIT_DIR/usr/local/src"
+GIT_TARGET_USR_BIN="$HOST_GIT_DIR/usr/local/bin"
+#
+ECLIPSE_WORKSPACE_DIR_NAME="ws-eclipse"
+ECLIPSE_WORKSPACE_DIR="$HOST_TEMP_DIR/$ECLIPSE_WORKSPACE_DIR_NAME"
+# SSH
+HOST_SSH_DIR="$HOST_USER/.ssh"
+KEY_PAIR_LABEL="gbutils"
+HOST_SSH_KEY="$HOST_SSH_DIR/id_rsa_$KEY_PAIR_LABEL"
+
+########################################
+# TODO: add base vimrc config
+VIM_USER_CONFIG="$HOST_USER/.vimrc"
+# TODO: add base npmrc config
+NPM_USER_CONFIG="$HOST_USER/.npmrc"
