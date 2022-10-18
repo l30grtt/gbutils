@@ -7,20 +7,24 @@ steps=(
     # create pocket repo server & temp folders
     create-main-folders
 
-    # install applications
-    unzip-apps
+    # git bash stuff
+    setup-git
 
-    # setup applications
-    post-unzip
+    # install notepad++
+    setup-npp
+
+    # install nvm, node & npm
+    setup-nodejs
+
+    # install jdk & eclipse
+    setup-java
 
     # $HOME/.ssh/id_rsa_gbutils
     generate-ssh-key-pair
-
-    # nvm install & use node 16.17.1
-    #install-node
 )
 
 for step in ${steps[@]}
 do :
+    echo "# -> $step"
     "./bin/stages/$step.sh"
 done

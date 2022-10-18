@@ -4,8 +4,8 @@ source ./config
 
 apps=(
     git
-    nvm
     npp
+    nvm
     jdk
     eclipse
 )
